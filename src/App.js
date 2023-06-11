@@ -1,25 +1,59 @@
-import logo from './logo.svg';
+import React from 'react';
+//import ReactDOM  from 'react';
 import './App.css';
+import Contacts from './components/Contacts';
 
-function App() {
+function App(){
+  // const date = new Date()
+  // const hours = date.getHours()
+  // let timeOfDay
+
+  // if(hours < 12){
+  //   timeOfDay = "morning"
+  // }else if(hours >= 12 && hours < 17){
+  //   timeOfDay = "afternoon"
+  // }else{
+  //   timeOfDay = "night"
+  // }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Contacts
+        img="./image/lion.jpg"
+        name="Kelvin Kimani"
+        role="front-end developer"
+        paragraph="working"
+
+      />
+      <Contacts
+        img="./image/image5.jpg"
+        name="Alice Muthoni"
+        role="back-end developer"
+        paragraph="Unemployed"
+        />
+      <Contacts
+        img="./image/images.jpg"
+        name="Francis Wairagu"
+        role="server-side developer"
+        paragraph="working"
+      />
+      <Contacts
+        img="./image/personal-care-products.jpg"
+        name="Boston Adrian"
+        role="front-end developer"
+        paragraph="working"
+      />
     </div>
   );
 }
 
 export default App;
+
+{/* <div className="image-header">
+      <img src={HeaderImg} alt="lion"/>
+      <div>
+          <h2>Kelvin Kimani</h2>
+          <h5>front-end developer</h5>
+          <p>Freelancer</p>
+      </div>
+</div> */}
