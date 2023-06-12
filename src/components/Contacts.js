@@ -1,6 +1,7 @@
 //import HeaderImg from "../image/lion.jpg"
 export default function Contacts(props){
-    //console.log(props);
+    
+    console.log(typeof props.uploads);
     return(
         <div className="image-header">
             <img src={props.img} alt="lion"/>
@@ -8,7 +9,9 @@ export default function Contacts(props){
                 <h2>{props.name}</h2>
                 <h5>{props.role}</h5>
                 <p>{props.paragraph}</p>
+                <p>{props.uploads}</p>
             </div>
         </div>
     )
+    
 }

@@ -15,36 +15,41 @@ function App(){
   // }else{
   //   timeOfDay = "night"
   // }
+ 
   
   return (
     <div className='container'>
       <Contacts
-        img="./image/lion.jpg"
+        img="lion.jpg"
         name="Kelvin Kimani"
         role="front-end developer"
         paragraph="working"
-
+        uploads= {9}
       />
       <Contacts
         img="./image/image5.jpg"
         name="Alice Muthoni"
         role="back-end developer"
         paragraph="Unemployed"
+        uploads= {8}
         />
       <Contacts
         img="./image/images.jpg"
         name="Francis Wairagu"
         role="server-side developer"
         paragraph="working"
+        uploads= {7}
       />
       <Contacts
         img="./image/personal-care-products.jpg"
         name="Boston Adrian"
         role="front-end developer"
         paragraph="working"
+        uploads= {6}
       />
     </div>
   );
+
 }
 
 export default App;
