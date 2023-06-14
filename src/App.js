@@ -16,13 +16,13 @@ function App(){
   //   timeOfDay = "night"
   // }
  
-  const nums = ["bulbasaur","charmander","squirtle"]
- const sqrt = nums.map(capsLock); 
-console.log(sqrt);
-  function capsLock(num){
-    // for(var i = 0; i<=num.length; i++)
-      return `<p>${num}</p>`
-  }
+//   const nums = ["bulbasaur","charmander","squirtle"]
+//  const sqrt = nums.map(capsLock); 
+// console.log(sqrt);
+//   function capsLock(num){
+//     // for(var i = 0; i<=num.length; i++)
+//       return `<p>${num}</p>`
+//   }
 
   return (
     <div className='container'>
